@@ -15,7 +15,7 @@
     <description>travel-itenerary-tracker</description>
 
     <!-- Change packaging to WAR to include JSP files -->
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <properties>
         <java.version>21</java.version>
     </properties>
