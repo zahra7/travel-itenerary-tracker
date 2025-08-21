@@ -45,10 +45,10 @@
                 Welcome to the Travel Itinerary Planner. Your one-stop solution for organizing, managing, and sharing your travel plans with friends and family. Let's make your next journey unforgettable.
             </p>
             <div class="flex-center-space-x-4">
-                <a href="all-itineraries.jsp" class="link-button button-primary">
+                <a href="allItineraries" class="link-button button-primary">
                     Start Planning
                 </a>
-                <a href="contact.jsp" class="link-button button-secondary">
+                <a href="contact" class="link-button button-secondary">
                     Learn More
                 </a>
             </div>
