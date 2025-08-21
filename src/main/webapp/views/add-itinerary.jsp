@@ -1,5 +1,7 @@
-
 <!-- add-itinerary.jsp -->
+<%@page language="java" contentType="text/html; charset=UTF-8"
+        pageEncoding="UTF-8" isELIgnored="false" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,22 +12,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- External Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="antialiased">
 
 <!-- Header & Navigation -->
 <header>
     <nav class="container">
-        <a href="home.jsp" class="nav-logo">
+        <a href="home" class="nav-logo">
             <span>✈️</span>
             <span>Travel Planner</span>
         </a>
         <div class="nav-links">
-            <a href="home.jsp">Home</a>
-            <a href="all-itineraries.jsp">All Itineraries</a>
-            <a href="add-itinerary.jsp">Add Itinerary</a>
-            <a href="contact.jsp">Contact</a>
+            <a href="home">Home</a>
+            <a href="allItineraries">All Itineraries</a>
+            <a href="addItinerary">Add Itinerary</a>
+            <a href="contact">Contact</a>
         </div>
     </nav>
 </header>
@@ -35,18 +37,19 @@
     <section>
         <h2>Create a New Itinerary</h2>
         <p>Fill out the details below to start planning a new trip!</p>
-        <form action="#" method="POST" class="contact-form">
+        <form action="/handleForm" method="POST" class="contact-form">
             <div>
-                <label for="itinerary-name">Itinerary Name</label>
-                <input type="text" id="itinerary-name" name="itinerary-name" class="input-field" placeholder="e.g., Weekend Getaway to London">
+                <label for="name">Itinerary Name</label>
+                <input type="text" id="name" name="name"
+                       class="input-field" placeholder="e.g., Weekend Getaway to London" required>
             </div>
             <div>
-                <label for="start-date">Start Date</label>
-                <input type="date" id="start-date" name="start-date" class="input-field">
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate" name="startDate" class="input-field">
             </div>
             <div>
-                <label for="end-date">End Date</label>
-                <input type="date" id="end-date" name="end-date" class="input-field">
+                <label for="endDate">End Date</label>
+                <input type="date" id="endDate" name="endDate" class="input-field">
             </div>
             <div>
                 <label for="destination">Destination</label>
